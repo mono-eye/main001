@@ -1,0 +1,118 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	responsive
+-------------------------------------------------------- */
+/* 画面幅が900px以下のとき */
+@media screen and (max-width: 899px) {
+ /* スマートフォン用のスタイルを指定する */
+ .container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 1.42rem;
+ }
+
+/* ============================
+	index.html
+============================ */
+main > .grid-content{
+  margin-top: 5rem;
+	display: grid;
+  grid-row-gap: 4rem;
+  grid-column-gap: 1.5rem;
+  grid-template-columns: repeat(2, minmax(40%, 1fr));
+}
+
+/* ============================
+	PRODUCTS.html
+============================ */
+main .grid-container{
+ margin-top: 2rem;
+display: grid;
+ grid-row-gap: 4rem;
+ grid-column-gap: 1.5rem;
+ grid-template-columns: repeat(2, minmax(40%, 1fr));
+} 
+
+/* ============================
+	item.html
+============================ */
+main > .flex-box{
+  display: block;
+}
+main > .flex-box{
+  /* コンテンツ幅800px */
+  width: 100%;
+}
+main > .flex-box > li{
+  width: 100%;
+}
+main > .flex-box > li > img {
+  width: 100%;
+  height: auto;
+}
+main > .flex-box > li > p:first-child{
+  padding-top: 2rem;
+}
+
+/* ============================
+	about.html
+============================ */
+main > .avout-box{
+  /* コンテンツ幅600px */
+  width: 100%;
+  margin-top: 2rem;
+}
+
+/* ============================
+	company.html
+============================ */
+main > .company-box{
+  /* コンテンツ幅600px */
+  width: 100%;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+  display: block;
+}
+main > .company-box > dt{
+  width: 100%;
+  padding: 1rem 0 0;
+}
+main > .company-box > dd{
+  width: 100%;
+  border-bottom: #eeeeee 1px solid;
+  padding: 1rem 0;
+}
+main > .company-box > dt:nth-child(-n+9){
+  border-bottom: none;
+}
+/* map */
+main > .maps > iframe{
+  /* コンテンツ幅600px */
+  width: 100%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+ /* ============================
+  footer
+ ============================ */
+ footer{
+  height: 20svh;
+  height: 20vh;
+ }
+ footer #sns ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  column-gap: 2rem;
+  row-gap: 1rem;
+ }
+ footer #sns ul li:last-child{
+  margin-left: 0;
+  color: #505050;
+ }
+}

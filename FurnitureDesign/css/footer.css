@@ -1,0 +1,33 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	footer
+-------------------------------------------------------- */
+ footer{
+  background: #ffffff ;
+ }
+ /* sns */
+ footer #sns{
+  margin: 0 auto;
+  padding: 4rem 0 2rem;
+  font-size: 0.7rem;
+ }
+ footer #sns ul{
+  display: flex;
+  justify-content: start;
+  column-gap: 2rem;
+ }
+ footer #sns ul span{
+  padding-right: 0.5rem;
+ }
+ footer #sns ul li:last-child{
+  margin-left: auto;
+  color: #505050;
+ }
+ footer #sns ul li a:hover,
+ footer #sns ul li a:active{
+  opacity: 50%;
+  transition: 1.0s ;
+ }
+ footer #sns ul li a:visited{
+  opacity: 100%;
+ }

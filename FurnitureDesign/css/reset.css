@@ -1,0 +1,84 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	reset
+-------------------------------------------------------- */
+html,body,div,header,footer,
+dl,dt,dd,ul,ol,li,span,
+h1,h2,h3,h4,h5,h6,
+p,a,i,
+table,tbody,th,td,
+pre,form,fieldset,input,textarea,blockquote {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+	line-height: 1.5;
+	color: #505050;
+	font-style: normal;
+	font-weight: normal;
+	}
+ul,li,a{
+	text-decoration: none;
+	}
+ol,ul {
+	list-style: none;
+	}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+	}
+#header,#footer,menu,nav,.container{
+	display: block;
+	box-sizing: border-box;
+	}
+img{
+	border: none;
+	vertical-align:bottom;
+	width: 100%;
+ height: auto;
+	}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+	}
+
+
+/* --------- 共通 ---------- */
+
+	body{
+		font-size: 14px;
+		font-family: "Source Sans Pro", "Hiragino Kaku Gothic ProN", Meiryo, Arial, sans-serif;
+		-webkit-text-size-adjust: 100%;
+		color: #505050;
+	}
+	.container{
+		width: 100%;
+  max-width: 1360px;
+  margin: 0 auto;
+  padding: 0 2.86rem;
+	}
+	/* 各ページ見出し */
+	main h2{
+  margin-top: 8rem;
+  font-size: 0.9rem;
+	}
+	main > h2 > span{
+  font-size: 0.9rem;
+  margin-right: 0.5rem;
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

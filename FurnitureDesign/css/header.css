@@ -1,0 +1,140 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	header
+-------------------------------------------------------- */
+header{
+	width: 100%;
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	background-color: #fff;
+}
+#inner{
+	width: 100%;
+	margin: 0 auto;
+	padding: 1rem 2.86rem;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+h1{
+	font-size: 1rem;
+}
+h1 > a > img{
+	width: 70%;
+}
+h1 > a{
+	display: block;
+}
+h1 > a:hover,
+h1 > a:active{
+	opacity: 50%;
+	transition: 1.0s;
+}
+h1 > a:visited{
+	opacity: 100%;
+}
+#header .toggle_btn {
+	margin: 0 0 0 auto;
+}
+/* ハンバーガーメニュー */
+/* 線の設定 */
+.toggle_btn{
+ width: 1.87rem;
+ height: 1.87rem;
+ position: relative;
+ transition: all 0.5s;
+ cursor: pointer;
+ z-index: 20;
+}
+.toggle_btn span {
+ display: block;
+ position: absolute;
+ width: 1.87rem;
+ height: 2px;
+ background-color: #505050;
+ border-radius: 4px;
+ transition: all 0.5s;
+}
+/* 1本目の線の位置を設定 */
+.toggle_btn span:nth-child(1) {
+ top: 0.5rem;
+}
+/* 2本目の線の位置を設定 */
+.toggle_btn span:nth-child(2) {
+ top: 1rem;
+}
+/* 2本目の線の位置を設定 */
+.toggle_btn span:nth-child(3) {
+ top: 1.5rem;
+	background-color: #505050;
+}
+/* ハンバーガーメニューの線の設定（メニューが開いている時）
+線の色を白に変更 */
+.open .toggle_btn span {
+ background-color: #ffffff;
+}
+/* 1本目の線を-45度回転 */
+.open .toggle_btn span:nth-child(1) {
+ -webkit-transform: translateY(4px) rotate(-45deg);
+ transform: translateY(4px) rotate(-45deg);
+}
+/* 3本目の線を45度回転 */
+.open .toggle_btn span:nth-child(2) {
+ -webkit-transform: translateY(-4px) rotate(45deg);
+ transform: translateY(-4px) rotate(45deg);
+}
+/* 3本目の線を45度回転 */
+.open .toggle_btn span:nth-child(3) {
+ opacity: 0;
+}
+/* メニューが開いている時は、全体を黒背景にする */
+.open #mask {
+ display: block;
+ position: fixed;
+ top: 0;
+ left: 0;
+ width: 100%;
+ height: 100%;
+ background: #505050;
+ opacity: .8;
+ z-index: 10;
+ cursor: pointer;
+}
+
+/* メニューが閉じている時は、
+「left: -300px;」で画面左に隠し、
+「opacity: 0;」で非表示にする */
+#nav {
+ position: fixed;
+ top: 0;
+ left: -300px;
+ width: 300px;
+ color: #fff;
+ padding: 36px 50px;
+ transition: all 0.5s;
+ z-index: 20;
+ opacity: 0;
+	/* background: chartreuse; */
+}
+#nav li {
+ margin-bottom: 0.68rem;
+}
+#nav a {
+ color: #fff;
+}
+/* メニューが開いている時は、
+「left: 0;」
+「opacity: 1;」
+で画面左に表示する */
+.open #nav {
+ left: 0;
+ opacity: 1;
+}
+
+/* icon */
+#nav > ul > li > a > span{
+ color: #ffffff;
+ margin-right: 0.5rem;
+}

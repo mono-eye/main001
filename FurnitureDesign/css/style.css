@@ -1,0 +1,190 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	style
+-------------------------------------------------------- */
+
+/* ============================
+	index.html
+============================ */
+main > .grid-content{
+  margin-top: 5rem;
+	display: grid;
+  grid-row-gap: 4rem;
+  grid-column-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+main ul .grid-item{
+  font-size: 0.8rem;
+}
+main ul .grid-item a dl dt img{
+  width: 100%;
+  height: 100%;
+  padding-bottom: 0.5rem;
+}
+
+/* 画像遷移 */
+main ul .grid-item a{
+ display: block;
+}
+main ul .grid-item a:hover,
+main ul .grid-item a:active{
+ opacity: 50%;
+ transition: 1.0s ;
+}
+main ul .grid-item a:visited{
+  opacity: 100%;
+}
+
+/* View More */
+main > .next{
+  margin: 5rem 0 0;
+  text-align: center;
+}
+main > .next > a:hover,
+main > .next > a:active{
+ opacity: 50%;
+ transition: 1.0s;
+}
+main > .next > a:visited{
+  opacity: 100%;
+}
+
+/* ============================
+	PRODUCTS.html
+============================ */
+main .grid-container{
+  margin-top: 2rem;
+	display: grid;
+  grid-row-gap: 4rem;
+  grid-column-gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}  
+
+main > ul {
+ margin-top: -8rem;
+}
+
+/* ページネーション */
+main .pagination{
+  margin-top: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 2%;
+}
+main .pagination li{
+  width: 25px;
+  height: 25px;
+  display: table-cell;
+  vertical-align: middle;
+}
+main .pagination .this span{
+  display: block;
+  text-align: center;
+  background: #e9e9e9;
+  border-radius: 3px;
+}
+main .pagination a{
+  display: block;
+  text-align: center;
+  border-radius: 3px;
+}
+main .pagination a:hover,
+main .pagination a:active{
+  background: #666666;
+  color: #ffffff;
+  transition: 1.0s;
+}
+
+/* ============================
+	item.html
+============================ */
+/* 画像 */
+main > .flex-box{
+  /* コンテンツ幅800px */
+  width: 62.5%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+main > .flex-box > li{
+  width: calc(100% / 2);
+}
+main > .flex-box > li > img {
+  width: 85%;
+  height: auto;
+}
+
+/* テキスト */
+main > .flex-box > li > p{
+  padding-bottom: 2rem;
+}
+main > .flex-box > li > .article-box{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+}
+main > .flex-box > li > .article-box dt{
+  width: 20%;
+}
+main > .flex-box > li > .article-box dd{
+  width: 80%;
+}
+
+/* ============================
+	about.html
+============================ */
+main > .avout-box{
+  /* コンテンツ幅600px */
+  width: 46.8%;
+  margin-top: 2rem;
+}
+main > .avout-box li{
+  padding-bottom: 3rem;
+}
+/* ============================
+	company.html
+============================ */
+/* company説明 */
+main > .company-box{
+  /* コンテンツ幅600px */
+  width: 46.8%;
+  margin-top: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start, baseline;
+  margin-bottom: 3rem;
+}
+main > .company-box > dt{
+  width: 18%;
+  padding: 1rem 0;
+}
+main > .company-box > dd{
+  width: 80%;
+  border-bottom: #eeeeee 1px solid;
+  padding: 1rem 0;
+}
+main > .company-box > dt:nth-child(-n+9){
+  border-bottom: #eeeeee 1px solid;
+}
+main > .company-box > dd:last-child{
+  border-bottom: none;
+}
+
+/* map */
+main > .maps > iframe{
+  /* コンテンツ幅600px */
+  width: 46.8%;
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -o-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+
+
+
+
+
+
