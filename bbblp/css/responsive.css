@@ -1,0 +1,232 @@
+@charset "utf-8";
+/* --------------------------------------------------------
+	responsive.css
+-------------------------------------------------------- */
+
+
+.br-sp { display: none; }
+
+@media (max-width: 900px) {
+	.br-sp { display: block; }
+
+/* ---------------------------
+見出し共通
+--------------------------- */
+h2{
+	font-size: 2rem;
+}
+
+
+/*=============================
+header
+=============================*/
+
+/* ---------------------------
+hamburger
+--------------------------- */
+
+#header .hamburger{
+	width: 70px;
+	height: 70px;
+}
+.hamburger span {
+	width: 30px;
+	position: absolute;
+	left: 20px;
+}
+/* 1本目 */
+.hamburger span:nth-child(1) {
+	top: 20px;
+}
+/* 2本目 */
+.hamburger span:nth-child(2) {
+	top: 35px;
+}
+/* 3本目 */
+.hamburger span:nth-child(3) {
+	top: 50px;
+}
+/* 1本目の線は-45度回転 */
+.hamburger.active span:nth-child(1) {
+	top: 45px;
+	left: 20px;
+}
+/* 2本目は消去 */
+
+/* 3本目は45度回転 */
+.hamburger.active span:nth-child(3) {
+	top: 45px;
+}
+/*=============================
+headerimg メイン画像 話して学ぼう！ 無料体験はこちら
+=============================*/
+#headerimg{
+	margin: 0 auto -10rem;
+	padding: 0;
+}
+#headerimg .slideanime{
+	width: 100%;
+}
+
+/*------------------------
+話して学ぼう！ 無料体験はこちら
+ ------------------------ */
+#headerimg .catch{
+	width: 90%;
+  position: absolute;
+  top: 18rem;
+  left: 1rem;
+}
+#headerimg .catch .text{
+  font-size: 2rem;
+}
+
+/* 無料体験はこちら */
+#headerimg .catch a{
+	display: block;
+	padding: 1rem 1rem;
+}
+
+
+
+/* ---------------------------
+BBBが選ばれる理由
+--------------------------- */
+
+#reason .move ul.leftBox{
+	width: 94%;
+	padding: 0.8rem 1.2rem;
+	margin-bottom: 2rem;
+}
+#reason .move ul.rightBox{
+	width: 94%;
+	padding: 0.8rem 1.2rem;
+}
+#reason .move ul li .text{
+	font-size: 1.2rem;
+}
+
+/* ---------------------------
+受講生の声
+--------------------------- */
+
+#voice .item-left,
+#voice .item-right{
+	width: 100%;
+}
+#voice .item-left{
+	/* 下から順に表示 */
+	flex-direction: column-reverse;
+	margin: 0 auto;
+}
+#voice .item-right{
+		/* 上から順に表示 */
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+#voice .item-left .Infoitem {
+	width: 40%;
+	margin: 0 auto;
+}
+#voice .item-right .Infoitem {
+	width: 40%;
+	margin: 0 auto;
+}
+
+
+/* ---------------------------
+左側の設定
+--------------------------- */
+/* 左の吹き出しbox */
+#voice .item-left .textitem{
+	width: 100%;
+	margin: 2rem 15px 2rem 0;
+}
+/* 下に吹き出し */
+#voice .item-left .textitem:before {
+	content: "";
+	position: absolute;
+	top: 115%;
+	left: 50%;
+	margin-left: -15px;
+	border: 15px solid transparent;
+	border-top: 15px solid #e9f1fb;
+}
+
+/* ---------------------------
+右側の設定
+--------------------------- */
+/* 右の吹き出しbox */
+/* 下に吹き出し */
+#voice .item-right .textitem:before {
+	content: "";
+	position: absolute;
+	top: 115%;
+	left: 50%;
+	margin-left: -15px;
+	border: 15px solid transparent;
+	border-top: 15px solid #e0edff;
+}
+
+/* アニメーションを実行 */
+#voice .balloon {
+	animation: balloon 0.5s ease-out 0s 1 forwards;
+}
+/* 最初は「transform: scale(0.1);」で要素を小さくした状態で、
+「opacity: 0;」で非表示にしておく
+0.5秒かけて要素を表示させながら元のサイズへ戻す */
+@keyframes balloon {
+	0% {
+			transform: scale(0.1);
+			opacity: 0;
+	}
+	100% {
+			transform: scale(1);
+			opacity: 1;
+	}
+}
+
+/* ---------------------------
+スクールの概要    水玉ループ
+--------------------------- */
+	.menu li{
+		width: 100%;
+	}
+
+	/* ---------------------------
+	無料体験申し込み
+	--------------------------- */
+	#entry .title{
+		font-size: 1.6rem;
+	}
+	#entry .entrybtn{
+		width: 98%;
+		/* margin: 0 auto; */
+	}
+	#entry .entrybtn a{
+		display: block;
+		padding: 18px 0;
+		font-size: 1.8rem;
+	}
+	#entry .entrybtn a:hover,
+	#entry .entrybtn a:active{
+		display: block;
+		padding: 18px 0;
+		box-sizing: border-box;
+		transition: 0.5s;
+	}
+
+	/*=============================
+	footer
+	=============================*/
+	footer .container .inner li{
+		width: calc(100% / 2 - 2%);
+		padding-top: 2rem;
+	}
+
+
+}
+
+
+	
